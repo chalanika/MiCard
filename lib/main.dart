@@ -9,12 +9,13 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       home: Scaffold(
-        backgroundColor: Colors.teal,
+        backgroundColor: Colors.black,
         body: SafeArea(
           child: Column(
+            mainAxisAlignment: MainAxisAlignment.center,
             children:<Widget>[
               CircleAvatar(
-                radius:40.0,
+                radius:50.0,
                 backgroundImage:AssetImage('images/sew.jpg')
               ),
               Text(
