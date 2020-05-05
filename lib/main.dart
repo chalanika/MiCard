@@ -32,30 +32,24 @@ class MyApp extends StatelessWidget {
                   color: Colors.teal.shade100,
                 ),
               ),
-              Container(
-                padding: EdgeInsets.all(10.0),
+              Card(
                 color: Colors.white,
                 margin: EdgeInsets.symmetric(vertical: 10.0,horizontal: 25.0),
-                child: Row(
-                  children:<Widget>[
-                    Icon(
-                      Icons.phone,
+                child: ListTile(
+                  leading:Icon(
+                    Icons.phone,
+                    color:Colors.black,
+                  ),
+                  title: Text(
+                    '+94 7186656',
+                    style:TextStyle(
                       color:Colors.black,
+                      fontSize: 20.0,
                     ),
-                    SizedBox(
-                      width:10.0 ,
-                    ),
-                    Text(
-                      '+94 7186656',
-                      style:TextStyle(
-                        color:Colors.black,
-                        fontSize: 20.0,
-                      ),
-
-                    ),
-                  ]
+                  ),
                 ),
               ),
+              
             ]
           ),
         ),
@@ -63,3 +57,4 @@ class MyApp extends StatelessWidget {
     );
   }
 }
+
